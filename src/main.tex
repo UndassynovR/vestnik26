@@ -6,48 +6,53 @@
 \begin{document}
 
 % Include cover page (PDF)
-\includepdf[pages=-,fitpaper=true]{media/vestnik-front.pdf}
+%% \includepdf[pages=-,fitpaper=true]{media/vestnik-front.pdf}
 
 % Disable page numbering for the front matter
 \pagenumbering{gobble}
 
 % First pages (e.g., title, abstract, etc.)
-\input{src/first_pages.tex}
+%% \input{src/first_pages.tex}
 
 % Ensure TOC starts on the right-hand page
-\cleardoublepage
-\begin{center}
-{\large МАЗМҰНЫ – СОДЕРЖАНИЕ – CONTENTS}
-\end{center}
-\tableofcontents
-\clearpage
+%% \cleardoublepage
+%% \begin{center}
+%% {\large МАЗМҰНЫ – СОДЕРЖАНИЕ – CONTENTS}
+%% \end{center}
+%% \tableofcontents
+%% \clearpage
 
 % Enable page numbering and fancy headers/footers
 \pagenumbering{arabic}
 
 % Main content
+
 \input{src/pish/1.tex}
-\input{src/gorn/1.tex}
-\input{src/gorn/3.tex}
-\input{src/gorn/2.tex}
-\input{src/ekon/4.tex}
-\input{src/ekon/1.tex}
-\input{src/ekon/3.tex}
-\input{src/ekon/7.tex}
-\input{src/ekon/6.tex}
-\input{src/ekon/2.tex}
-\input{src/ekon/5.tex}
-\input{src/chem/1.tex}
-\input{src/chem/2.tex}
-\input{src/ict/4.tex}
-\input{src/ict/1.tex}
-\input{src/ict/3.tex}
-\input{src/ict/6.tex}
-\input{src/ict/2.tex}
-\input{src/ict/5.tex}
+
+%\input{src/gorn/1.tex}
+%\input{src/gorn/2.tex}
+%\input{src/gorn/3.tex}
+
+%\input{src/ekon/1.tex}
+%\input{src/ekon/2.tex}
+%\input{src/ekon/3.tex}
+%\input{src/ekon/4.tex}
+%\input{src/ekon/5.tex}
+%\input{src/ekon/6.tex}
+%\input{src/ekon/7.tex}
+
+%\input{src/chem/1.tex}
+%\input{src/chem/2.tex}
+
+%\input{src/ict/1.tex}
+%\input{src/ict/2.tex}
+%\input{src/ict/3.tex}
+%\input{src/ict/4.tex}
+%\input{src/ict/5.tex}
+%\input{src/ict/6.tex}
 
 % Last page (e.g., appendix, references, etc.)
-\input{src/last_page.tex}
+%% \input{src/last_page.tex}
 
 \end{document}
 
