@@ -1,0 +1,10 @@
+# Ignore build directory
+build/
+
+# Ignore ghost/undo files
+*~
+.*~
+*#
+
+# Ignore .DS_Store files (macOS system files)
+.DS_Store

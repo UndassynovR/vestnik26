@@ -1,0 +1,2 @@
+# vestnik
+pacman -S texlive
