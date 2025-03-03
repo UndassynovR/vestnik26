@@ -17,7 +17,7 @@ pdf: $(PDF_FILE)
 
 # Rule to generate the PDF
 $(PDF_FILE): src/main.tex
-	latexmk -xelatex -pvc -output-directory=$(BUILD_DIR) -jobname=$(PDF_TARGET) src/main.tex
+	latexmk -xelatex -pvc -view=pdf -time -output-directory=$(BUILD_DIR) -jobname=$(PDF_TARGET) src/main.tex
 
 # Clean the build directory
 clean:
