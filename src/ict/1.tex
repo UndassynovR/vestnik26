@@ -25,7 +25,7 @@
 
 \emph{\textsuperscript{5}Атырауский универститет имени Х. Досмухамедова}
 
-\textsuperscript{\envelope }Корреспондент-автор: tmazakov@mail.ru
+\raggedright \textsuperscript{\envelope }Корреспондент-автор: tmazakov@mail.ru
 \end{affiliation}
 
 Весной 2010 года в Алматинской области, в 2014 году в Карагандинской
@@ -74,9 +74,9 @@
 \end{articleheader}
 
 \begin{affiliation}
-\emph{¹Әл-Фараби атындағы Қазақ ұлттық университеті, Алматы, Қазақстан,}
+\emph{\textsuperscript{1}Әл-Фараби атындағы Қазақ ұлттық университеті, Алматы, Қазақстан,}
 
-\emph{²Сейфуллин атындағы Қазақ агротехникалық зерттеу университеті, Астана, Қазақстан,}
+\emph{\textsuperscript{2}Сейфуллин атындағы Қазақ агротехникалық зерттеу университеті, Астана, Қазақстан,}
 
 \emph{\textsuperscript{3}Халықаралық инженерлік және технология университеті, Алматы, Қазақстан,}
 
@@ -120,14 +120,14 @@
 {\bfseries FORECASTING THE CONSEQUENCES OF A MUDFLOW TAKING INTO ACCOUNT
 THE CHARACTERISTICS OF THE WATER BODY}
 
-\textsuperscript{1}A.T. Mazakova,
+{\bfseries \textsuperscript{1}A.T. Mazakova,
 \textsuperscript{1}Sh.A. Jomartova,
 \textsuperscript{2}B.M. Mazakova,
 \textsuperscript{3}M.S. Aliaskar,
 \textsuperscript{1}Y.К. Mergengali,
 \textsuperscript{1,3}T.Zh. Mazakov,
 \textsuperscript{4}A.T.Dossanalyieva,
-\textsuperscript{5}A.D.Mailybayeva
+\textsuperscript{5}A.D.Mailybayeva}
 \end{articleheader}
 
 \begin{affiliation}
@@ -242,6 +242,12 @@ can be successfully applied in various scenarios.
 частным арендаторам часто не хватает средств для ремонта ключевых
 сооружений {[}4{]}.
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\columnwidth]{media/ict/image2}
+	\caption*{Рис. 1 - Вид водоема со стороны плотины}
+\end{figure}
+
 Весной 2010 года в Алматинской области произошло разрушительное
 наводнение, вызванное прорывом плотины, повлекшее человеческие жертвы и
 масштабные разрушения. Подобное трагическое событие повторилось в 2014
@@ -252,15 +258,7 @@ can be successfully applied in various scenarios.
 {\bfseries Материалы и методы.} В математической модели рассмотрен
 трапецеидальный тип водоема, вид которого со стороны плотины представлен
 на рисунке 1.
-\end{multicols}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.3\textwidth]{media/ict/image2}
-	\caption*{Рис. 1 - Вид водоема со стороны плотины}
-\end{figure}
-
-\begin{multicols}{2}
 Введем следующие обозначения {[}6-8{]}:
 
 \(\mathrm{\Delta}T\)- временной шаг отсчета (в часах);
@@ -314,8 +312,12 @@ can be successfully applied in various scenarios.
 
 Тогда справедливы формулы
 
-\(h_{0} - h_{pr} = h_{1,k} + h_{2,k}\),
-\(V_{0} - V_{3} = V_{1,k} + V_{2,k}\) (1)
+\begin{equation}
+\begin{aligned}
+h_{0} - h_{pr} &= h_{1,k} + h_{2,k}, \\
+V_{0} - V_{3} &= V_{1,k} + V_{2,k}
+\end{aligned}
+\end{equation}
 
 Длина водоема \(l\) , ширина водоема по основанию \(\omega_{0}\ \)и
 гребню плотины \(\omega_{1}\), высота \(h_{0}\), ширина и высота прорана
@@ -326,49 +328,56 @@ can be successfully applied in various scenarios.
 Тогда ширина водоема по верхней точки прорана в плотине могут быть
 вычислены по формулам
 
-\(\omega_{3} = ({\omega_{1}*h}_{0} + \left( \omega_{0} - \ \omega_{1} \right)*{(h_{0} - h}_{pr}))/h_{0}\)
-(2)
+\begin{equation}
+\omega_{3} = ({\omega_{1}*h}_{0} + \left( \omega_{0} - \ \omega_{1} \right)*{(h_{0} - h}_{pr}))/h_{0}
+\end{equation}
 
 Площади поверхностей \(S_{0}\), \(S_{1}\ и\ S_{3}\) также являются
 неизменными и могут быть вычислены:
 
-\(S_{i} = l*\omega_{i},\ \ \ i = 0,1,3\) (3)
+\begin{equation}
+S_{i} = l*\omega_{i},\quad i = 0,1,3
+\end{equation}
 
 Следовательно могут быть вычислены некоторые объемы
 
-\(V_{0} = (1/3)*h_{0}*\left( S_{1} + \sqrt{S_{1}*S_{0}} + S_{0} \right)\),
-(4)
-
-\[\ V_{3} = (1/3)*h_{pr}*\left( S_{0} + \sqrt{S_{0}*S_{3}} + S_{3} \right)\]
+\begin{equation}
+\begin{aligned}
+V_{0} &= (1/3)*h_{0}*\left( S_{1} + \sqrt{S_{1}*S_{0}} + S_{0} \right), \\
+V_{3} &= (1/3)*h_{pr}*\left( S_{0} + \sqrt{S_{0}*S_{3}} + S_{3} \right)
+\end{aligned}
+\end{equation}
 
 Так как расстояние до поверхности воды изменяется во времени, то ширина
 и площадь водоема, а также некоторые изменяемые объемы на уровне
 поверхности воды в момент времени \(T_{k}\) могут быть вычислены по
 формулам
 
-\(\omega_{2,k} = ({\omega_{1}*h}_{0} + \left( \omega_{0} - \ \omega_{1} \right)*h_{1,k})/h_{0}\),
-
-\[S_{2,k} = l*\omega_{2,k}\]
-
-\(V_{1,k} = (1/3)*h_{1,k}*\left( S_{1} + \sqrt{S_{1}*S_{2,k}} + S_{2,k} \right)\),
-(5)
-
-\[\ V_{2,k} = (1/3)*h_{2,k}*\left( S_{2,k} + \sqrt{S_{2,k}*S_{3}} + S_{3} \right)\]
+\begin{equation}
+\begin{aligned}
+\omega_{2,k} &= ({\omega_{1}*h}_{0} + \left( \omega_{0} - \omega_{1} \right)*h_{1,k})/h_{0}, \\
+S_{2,k} &= l*\omega_{2,k} \\
+V_{1,k} &= (1/3)*h_{1,k}*\left( S_{1} + \sqrt{S_{1}*S_{2,k}} + S_{2,k} \right), \\
+V_{2,k} &= (1/3)*h_{2,k}*\left( S_{2,k} + \sqrt{S_{2,k}*S_{3}} + S_{3} \right)
+\end{aligned}
+\end{equation}
 
 \(\mathrm{\Delta}V_{2,k}\) - объем воды вытекший из водоема за время
 \(\mathrm{\Delta}T\) может быть вычислен в соответствии с гидравлическим
 законом Торричелли по формуле
 
-\(\mathrm{\Delta}V_{2,k} = Q*\mathrm{\Delta}T = \ h_{pr}*\omega_{pr}*\sqrt{2*g*h_{2,k}}\)
-(6)
+\begin{equation}
+\mathrm{\Delta}V_{2,k} = Q*\mathrm{\Delta}T = \ h_{pr}*\omega_{pr}*\sqrt{2*g*h_{2,k}}
+\end{equation}
 
 Обозначим через
 \(\mathrm{\Delta}V = \mathrm{\Delta}V_{2,k} - \mathrm{\Delta}V_{1}\) -
 разница между вытекшей и прибывшей водой в водоем. Тогда справедливы
 следующие соотношения
 
-\(V_{1,k + 1} = V_{1,k} + \mathrm{\Delta}V\) ,
-\(V_{2,k + 1} = V_{2,k} - \mathrm{\Delta}V\) (7)
+\begin{equation}
+V_{1,k + 1} = V_{1,k} + \mathrm{\Delta}V,\quad V_{2,k + 1} = V_{2,k} - \mathrm{\Delta}V
+\end{equation}
 
 Кроме того, информативным является вычисляемый параметр
 \({\mathrm{\Delta}h}_{k}\)- высота, на которую ожидается опускание воды
@@ -381,28 +390,40 @@ can be successfully applied in various scenarios.
 Тогда ширина водоема на уровне роверхности в последующий момент времени
 \(T_{k + 1} = T_{k} + \mathrm{\Delta}T\) может быть вычислена
 
-\(\omega_{x} = ({\omega_{1}*h}_{0} + \left( \omega_{0} - \ \omega_{1} \right)*(h_{1} + x))/h_{0}\),
-(8)
-
-\[S_{x} = l*\omega_{x}\]
+\begin{equation}
+\begin{aligned}
+\omega_{x} &= ({\omega_{1}*h}_{0} + \left( \omega_{0} - \ \omega_{1} \right)*(h_{1} + x))/h_{0}, \\
+S_{x} &= l*\omega_{x}
+\end{aligned}
+\end{equation}
 
 Тогда ожидаемый расход воды \(x\) за последующий период времени
 находится из решения следующего нелинейного уравнения уравнения
 
-\(x*\left( S_{2} + \sqrt{S_{2}*S_{x}} + S_{x} \right) = \ 3*\mathrm{\Delta}V\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \)(9)
+\begin{equation}
+x*\left( S_{2} + \sqrt{S_{2}*S_{x}} + S_{x} \right) = \ 3*\mathrm{\Delta}V
+\end{equation}
 
 Ввиду сложности уравнения (9) не может быть найдено аналитическое
 выражение для \(x\). В этой связи для вычисления ожидаемого поднятия
 воды \(x\ \)применен численный метод дихотомии.
+\end{multicols}
 
 Введем функции\(:\)
 
-\(s(x) = \left( {\omega_{1}*h}_{0} + \left( \omega_{0} - \ \omega_{1} \right)*\left( h_{1} + x \right) \right)*l/h_{0}\),
+\begin{equation}
+s(x) = \left( {\omega_{1}*h}_{0} + \left( \omega_{0} - \ \omega_{1} \right)*\left( h_{1} + x \right) \right)*l/h_{0},
+\end{equation}
 
-\(g(x) = S_{2} + \sqrt{S_{2}*s(x)} + s(x)\), (11)
+\begin{equation}
+g(x) = S_{2} + \sqrt{S_{2}*s(x)} + s(x),
+\end{equation}
 
-\(f(x,y) = x*g(y) - 3*\mathrm{\Delta}V\) (12)
+\begin{equation}
+f(x,y) = x*g(y) - 3*\mathrm{\Delta}V
+\end{equation}
 
+\begin{multicols}{2}
 Тогда для определения ожидаемого опускания поверхности воды предлагаются
 метод «дихотомии» нахождения параметра \(x_{k}:\)
 
@@ -440,22 +461,26 @@ can be successfully applied in various scenarios.
 опустилась поверхность воды в водоеме.
 
 Максимальная высота волны \(h_{\max}\) ищется в виде
+\end{multicols}
 
-\(h_{\max} = \alpha_{0}*(\left( h_{pr}*\omega_{pr} \right)^{\alpha_{1}}h_{2}^{\alpha_{2}}V_{2}^{\alpha_{3}}\cos{\theta)/L^{\alpha_{4}}}\),
-(13)
+\begin{equation}
+h_{\max} = \alpha_{0}*(\left( h_{pr}*\omega_{pr} \right)^{\alpha_{1}}h_{2}^{\alpha_{2}}V_{2}^{\alpha_{3}}\cos{\theta)/L^{\alpha_{4}}},
+\end{equation}
 
-где \(\theta - угол\ наклона\ рельефа\ местности\ на\ расстоянии\ L\)
+где $\theta$ \emph{- угол наклона рельефа местности на расстоянии} $L$
 
 В формуле (13) все коэффициенты
-\(\mathbf{\alpha}_{\mathbf{i}}\mathbf{>}\mathbf{0,\ }\mathbf{i}\mathbf{=}\overline{\mathbf{0,4}}\)
+\(\alpha_{i}>0,i=\overline{0,4}\)
 
 На основе имеющейся информации о происшедших прорывах, подготовлены 30
 вариантов параметрических данных. На основе этой информации получена
 следующая формула:
 
-\(h_{\max} = 0,000134*(\left( h_{pr}*\omega_{pr} \right)^{0,32}h_{2}^{0,55}\ V_{2}^{0,4}\cos(\theta))/L^{0,4}\)
-(14)
+\begin{equation}
+h_{\max} = 0,000134*(\left( h_{pr}*\omega_{pr} \right)^{0,32}h_{2}^{0,55}\ V_{2}^{0,4}\cos(\theta))/L^{0,4}
+\end{equation}
 
+\begin{multicols}{2}
 В формуле (14) объем водохранилища (\(V_{2}\ \)) и высота до поверхности
 воды \(h_{2}\) изменяются по времени; расстояние от створа плотины до
 точки наблюдения (L) зависит от координат наблюдаемой точки.
@@ -469,7 +494,7 @@ can be successfully applied in various scenarios.
 
 {\bfseries Обсуждение и результаты.} Отсчет ведется каждые полчаса:
 
-\[\mathrm{\Delta}T = 0.5\ часа = 30\ минут\]
+\[\mathrm{\Delta}T = 0.5 \text{ часа} = 30 \text{ минут}\]
 
 Все дальнейшие расчеты моделируют события, произошедшие в селе Кызылагаш
 Алматинской области 11 и 12 марта 2010 года. На рисунке 2 представлено
@@ -479,7 +504,7 @@ can be successfully applied in various scenarios.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image3}
+	\includegraphics[width=0.9\textwidth]{media/ict/image3}
 	\caption*{Рис. 2 - Расположение водоема и села Кызылагаш}
 \end{figure}
 
@@ -496,7 +521,7 @@ can be successfully applied in various scenarios.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image4}
+	\includegraphics[width=0.7\textwidth]{media/ict/image4}
 	\caption*{Рис. 3 - График максимальной волны прорыва в с.Кызылагаш}
 \end{figure}
 
@@ -591,7 +616,7 @@ AP19678157.}
 
 \begin{references}
 1.Hamutova M.V., Kushnikov V.A. Matematicheskaja model'{}
-prognozirovanija posledstvij navodnenij//Vestnik Astrahan. gos. tehn.
+prognozirovanija posledstvij navodnenij// Vestnik Astrahan. gos. tehn.
 un-ta. Serija upravlenie, vychisl. tehn. inform.- 2016.- № 3. - S.
 109-114. {[}in Russian{]}
 
@@ -602,7 +627,7 @@ http://elar.urfu.ru/handle/10995/66329ju Data
 obrashhenija:17.12.2024{[}in Russian{]}
 
 3.Striganova M.Ju. Metody ocenki i prognozirovanie posledstvij pri
-razrushenii gidrotehnicheskih sooruzhenij // Vestnik
+razrushenii gidrotehnicheskih \\sooruzhenij // Vestnik
 komandno-inzhenernogo instituta MChS Respubliki
 Belorus'.- 2012.- № 1(15). - S. 10-2. {[}in Russian{]}
 
@@ -613,13 +638,13 @@ opasnostjah, svjazannyh s vodoj v Central' noj Azii. --
 2017. - № 3(1). - S. 19-25. {[}in Russian{]}
 
 5.Moldabekov M.M., Eremir D.I., Ponjatov Ju.A. Monitoring urovnja vody,
-ozer, rek morej i gidrotehnicheskih sooruzhenij // Vestnik KazNTU.-
+ozer, rek morej i \\gidrotehnicheskih sooruzhenij // Vestnik KazNTU.-
 2013. - №1. - S. 3-6. {[}in Russian{]}
 
 6. Mazakov T.Zh., Dzhomartova Sh.A., Mazakova A.T., Shormanov T.S.,
 Aliaskar M.S. Gibridnaja model'{} prognozirovanija
 processa selevogo proryva//Vestnik KazUTB.-2024.- № 2(23). - S.1 20-126.
-DOI 10.58805/kazutb.v.2.23-481{[}in Russian{]}
+DOI \\10.58805/kazutb.v.2.23-481{[}in Russian{]}
 
 7.Mazakov T.Zh., Dzhomartova Sh.A., Mazakova A.T., Tojkenov G.Ch.,
 Aliaskar M.S., Tojkenova U.G. Identifikacii matematicheskih modelej
@@ -627,8 +652,8 @@ metodom kvazilinerarizacii // Vestnik KazUTB. - 2024. - № 4(25).-
 C.16-23. DOI 10.58805/kazutb.v.4.25-650{[}in Russian{]}
 
 8.Mazakov T.Zh., Burgegulov A.D., Dzhomartova Sh.A., Mazakova A.T.,
-Sametova A.A., Dosanalieva A.T. Postroenie marshrutov dlja jevakuacii
-sotrudnikov iz zdanija pri vozniknovenii chrezvychajnoj situacii //
+Sametova A.A., \\Dosanalieva A.T. Postroenie marshrutov dlja jevakuacii
+sotrudnikov iz zdanija pri vozniknovenii \\chrezvychajnoj situacii //
 Vestnik KazUTB. - 2024.- № 1(22).- C. 68-74
 
 DOI 10.58805/kazutb.v.1.22-292{[}in Russian{]}
@@ -639,10 +664,11 @@ DOI 10.58805/kazutb.v.1.22-292{[}in Russian{]}
 
 Мазақова А.Т.- докторант КазНУ им.аль-Фараби, Алматы, Казахстан, e-mail:
 \href{mailto:aigerym97@mail.ru}{\nolinkurl{aigerym97@mail.ru}}; ORCID:
-https://orcid.org/{\bfseries 0000-0003-3019-3352}
+
+https://orcid.org/0000-0003-3019-3352
 
 Джомартова Ш.А. - доктор технических наук, доцент, КазНУ им. аль-Фараби,
-Алматы, Казахстан, e-mail:
+Алматы, Казахстан, e-mail:\\
 \href{mailto:jomartova@mail.ru}{\nolinkurl{jomartova@mail.ru}}; ORCID:
 https://orcid.org/0000-0002-5882-5588
 
@@ -650,17 +676,18 @@ https://orcid.org/0000-0002-5882-5588
 исследовательский \emph{университет} имени С. Сейфуллина, Астана,
 Казахстан, e-mail:
 \href{mailto:bayan7080@mail.ru}{\nolinkurl{bayan7080@mail.ru}};
-ORCID{\bfseries :} https://orcid.org{\bfseries /0000-0003-4904-3557}
+ORCID: https://orcid.org/0000-0003-4904-3557
 
 Әлиасқар М.С. - старший преподаватель МИТУ, Алматы, Казахстан, e-mail:
 \href{mailto:m.alyasqar@gmail.ru}{\nolinkurl{m.alyasqar@gmail.ru}};
 ORCID:
-https://orcid.org/\href{https://orcid.org/0000-0002-3013-6617}{0000-0002-3013-6617}
+
+\href{https://orcid.org/0000-0002-3013-6617}{https://orcid.org/0000-0002-3013-6617}
 
 Мергенгали Е.К. -- докторант КазНУ имени аль-Фараби, Алматы, Казахстан,
 e-mail:
 \href{https://e.mail.ru/compose/?mailto=mailto\%3aestony.9999@gmail.com}{estony.9999@gmail.com};
-ORCID:~https://orcid.org/0000-0002-9755-6472
+ORCID: \\https://orcid.org/0000-0002-9755-6472
 
 Мазаков Т.Ж. - доктор физико-математических наук, профессор, КазНУ им.
 аль-Фараби, Алматы, Казахстан, e-mail:
@@ -680,11 +707,11 @@ ORCID: 0000-0003-0598-4806
 \emph{{\bfseries Information about the author}}
 
 Mazakova A.T.- Doctoral student of Al-Farabi Kazakh National University,
-Almaty, Kazakhstan, e-mail e-mail:
+Almaty, Kazakhstan, e-mail:
 \href{mailto:aigerym97@mail.ru}{\nolinkurl{aigerym97@mail.ru}};
 
 Jomartova Sh.A. - Doctor of Technical Sciences, Associate Professor,
-Al-Farabi KazNU, Almaty, Kazakhstan, e-mail:
+Al-Farabi KazNU, Almaty, Kazakhstan, e-mail:\\
 \href{mailto:jomartova@mail.ru}{\nolinkurl{jomartova@mail.ru}};
 
 Mazakova B.M. - Senior Lecturer, Kazakh Agrotechnical Research
@@ -695,7 +722,7 @@ Aliaskar M.S. - Senior Lecturer, MITU, Almaty, Kazakhstan, e-mail:
 \href{mailto:m.alyasqar@gmail.ru}{\nolinkurl{m.alyasqar@gmail.ru}};
 
 Mergengali E.K. - Doctoral student of Al-Farabi Kazakh National
-University, Almaty, Kazakhstan, e-mail:
+University, Almaty, Kazakhstan, e-mail:\\
 \href{mailto:estony.9999@gmail.com}{\nolinkurl{estony.9999@gmail.com}};
 
 Mazakov T.Zh. - Doctor of Physical and Mathematical Sciences, Professor,
@@ -707,7 +734,7 @@ Almaty Technological University, Almaty, Kazakhstan, e-mail:
 \href{mailto:Dosanalieva1985@gmail.com}{\nolinkurl{Dosanalieva1985@gmail.com}}
 
 Mailybayeva A.D. - PhD, Associate Professor, Department of Computer
-Science, Atyrau University named after Kh. Dosmukhambetov, Atyrau,
+Science, Atyrau University named after Kh. \\Dosmukhambetov, Atyrau,
 Kazakhstan, e-mail:
 \href{mailto:a.maylibayeva@asu.edu.kz}{\nolinkurl{a.maylibayeva@asu.edu.kz}};
 ORCID: https://orcid.org/0000-0003-0598-4806

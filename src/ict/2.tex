@@ -15,7 +15,7 @@
 
 \textsuperscript{2}Әл-Фараби атындағы Қазақ ұлттық университеті, Алматы, Қазақстан,
 
-\textsuperscript{\envelope }Корреспондент-автор: \href{mailto:nurbapa@gmail.com}{\nolinkurl{nurbapa@gmail.com}}
+\raggedright \textsuperscript{\envelope }Корреспондент-автор: \href{mailto:nurbapa@gmail.com}{\nolinkurl{nurbapa@gmail.com}}
 \end{affiliation}
 
 Дауыс тану жүйелері машиналық оқыту әдістеріне негізделген, оның ішінде
@@ -200,7 +200,7 @@ signal. be used, taking into account the details of the audio. signal.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image6}
+	\includegraphics[width=0.7\textwidth]{media/ict/image6}
 	\caption*{2 - сурет. Негізгі құрамдас әдісті пайдаланып өлшемділікті азайту кезінде дисперсияны сақтау}
 \end{figure}
 
@@ -288,7 +288,7 @@ n - енгізу үшін өлшемдер саны, а\textsubscript{0}-шығ�
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image7}
+	\includegraphics[width=0.5\textwidth]{media/ict/image7}
 	\caption*{3 – сурет. MLP архитектурасы}
 \end{figure}
 
@@ -321,7 +321,7 @@ Extra-Trees алгоритмі жаңартылмайтын шешімдер н�
 таңдап, мұндағы g\textsubscript{i} = \emph{Random\_split.}(G,
 d\textsubscript{i}), ∀ i = 1,..., K.;
 
---g\textsubscript{∗} сегменттерінде Score(g\textsubscript{∗}, G.) =
+-- g\textsubscript{∗} сегменттерінде Score(g\textsubscript{∗}, G.) =
 max\textsubscript{i=1,...,K} Score(g\textsubscript{i}, G.) деп
 келтіреміз.
 
@@ -358,49 +358,46 @@ G ішкі жиынның кірісі
 Сызықтық бөлінетін екілік жіктеу мәселесін шешу үшін SVC пайдалану үшін
 бізге қажет:
 
-\begin{itemize}
-\item
-  \emph{J-}ді құруда{\bfseries ,} мұндағы
-  \(J_{ij} = z_{i}z_{j}y_{i} \bullet y_{j}\)
-\item
-  σ --ны табу;
-\item
-  \(\sum_{i = 1}^{M}{}{\sigma\ }_{i} - \frac{1}{2}{\sigma\ }^{T}J\sigma\ \)
-\item
-  \({\sigma\ }_{i} \geq 0\ \ \ \ \ \ \forall_{i}\ және\ \sum_{i = 1}^{M}{}{\sigma\ }_{i}z_{i} = 0\ \)осы
-  шектеу аймақтарын ескере қарап, мейілінше жоғарылату;
-\item
-  QN шешімді қолдану болып табылады;
-\item
-  \(v = \sum_{i = 1}^{M}{}{\sigma\ }_{i}z_{i}y_{i}\) есептеу;
-\item
-  \({\sigma\ }_{i} > 0\ \ \ \ \ \ \)индекстерін есептеп, \emph{l} тірек
-  әрбір векторының санын анықтау;
-\item
-  \(a = \frac{1}{M_{s}}\sum_{l \in L}^{}{}({\sigma\ }_{m}z_{m}y_{m} \bullet y_{L}\)
-  есептеу керек;
-\item
-  \(y^{'}\ \)кез-келген нүктесі \(z^{'} = sgn(v \bullet y^{'} + a\)
-  есептеу тәсілімен жіктеуге болады.
-\end{itemize}
+-- \emph{J}-ді құруда, мұндағы
+\(J_{ij} = z_{i}z_{j}y_{i} \cdot y_{j}\)
+
+-- σ --ны табу;
+
+-- \(\sum_{i = 1}^{M}{}{\sigma}_{i} - \frac{1}{2}{\sigma\ }^{T}J\sigma\ \)
+
+-- \({\sigma\ }_{i} \geq 0 \forall_{i} \text{ және }\sum_{i = 1}^{M}{}{\sigma}_{i}z_{i} = 0\) осы
+шектеу аймақтарын ескере қарап, мейілінше жоғарылату;
+
+-- QN шешімді қолдану болып табылады;
+
+-- \(v = \sum_{i = 1}^{M}{}{\sigma}_{i}z_{i}y_{i}\) есептеу;
+
+-- \({\sigma}_{i} > 0\) индекстерін есептеп, \emph{l} тірек
+әрбір векторының санын анықтау;
+
+-- \(a = \frac{1}{M_{s}}\sum_{l \in L}^{}{}({\sigma\ }_{m}z_{m}y_{m} \cdot y_{L}\)
+есептеу керек;
+
+-- \(y^{'}\ \)кез-келген нүктесі \(z^{'} = sgn(v \cdot y^{'} + a\)
+есептеу тәсілімен жіктеуге болады.
 
 \emph{Gaussian NB алгоритмі}
 
-Осы Naive Bayes - \(y_{1},\ y_{2},\ ...,y_{n\ }\) тізбегіндегі
+Осы Naive Bayes - \(y_{1}, y_{2}, \ldots, y_{n}\) тізбегіндегі
 көбейтіндісіне с пропорционал \(А_{k}\)класының ішінде жататын
-\(m + 1\ \)деректер нүктесінің нақты ықтималдығын береді. \(m\)
-алдыңғы\(\ \sigma\left( A_{k} \right) -\)класы мен
+\(m + 1\) деректер нүктесінің нақты ықтималдығын береді. \(m\)
+алдыңғы \(\sigma\left( A_{k} \right) -\) класы мен
 \(\sigma\left( А_{a} \right)\prod_{i = 1}^{m}{}\sigma\left( A_{k} \right)\ \)белгілерінің
 арасындағы шартты ықтималдығы болып табылады {[}12{]}.
 
-\(\sigma(A_{a}\))\(\prod_{i = 1}^{m}{}\sigma\left( A_{a} \right) > \sigma(A_{b})\prod_{i = 1}^{m}{}\sigma(y_{i}|A_{b})\)
+\[\sigma(A_{a})\prod_{i = 1}^{m}{}\sigma\left( A_{a} \right) > \sigma(A_{b})\prod_{i = 1}^{m}{}\sigma(y_{i}\vee A_{b})\]
 
-\[\sigma\left( y_{1},\ldots,y_{n} \right) > \sigma(A_{b}|y_{1},\ldots,\ y_{n})\]
+\[\sigma\left( y_{1},\ldots,y_{n} \right) > \sigma(A_{b}\vee y_{1},\ldots,\ y_{n})\]
 
 Осылайша, \(y_{1},\ y_{2},\ ...,y_{n\ }\ \) мәліметтер нүктесіне кластың
-осы ең ықтимал нақты тағайындалуы \(а = 1,\ldots,А\) үшін
-\(\sigma\left( А_{a} \right)\prod_{i = 1}^{m}{}\ \sigma\left( A_{k} \right)\ \)есептеудің
-мәні макисмум болып табылатын \(А_{k}\ \)класындағы
+осы ең ықтимал нақты тағайындалуы \(a = 1,\ldots,A\) үшін
+\(\sigma\left( A_{a} \right)\prod_{i = 1}^{m}{}\ \sigma\left( A_{k} \right)\ \)есептеудің
+мәні макисмум болып табылатын \(A_{k}\ \)класындағы
 \(y_{1},\ y_{2},\ ...,y_{n\ }\ \)есептеу ықтималдығы.
 
 \emph{KNN алгоритмі}
@@ -428,7 +425,7 @@ KNN алгоритмі сұрау көрінісі мен мәліметтер �
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image8}
+	\includegraphics[width=0.7\textwidth]{media/ict/image8}
 	\caption*{4 -- сурет. Деректер жиынының жітеу дәлдігі}
 \end{figure}
 
@@ -444,7 +441,7 @@ KNN алгоритмі сұрау көрінісі мен мәліметтер �
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image9}
+	\includegraphics[width=0.7\textwidth]{media/ict/image9}
 	\caption*{5 - сурет. Әртүрлі әдістерді қолдану арқылы деректерді масштабтау кезіндегі жіктеу дәлдігі}
 \end{figure}
 
@@ -461,7 +458,7 @@ KNN алгоритмі сұрау көрінісі мен мәліметтер �
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image10}
+	\includegraphics[width=0.9\textwidth]{media/ict/image10}
 	\caption*{2 - кесте. Өлшемді азайту арқылы деректер бойынша жіктеу дәлдігі}
 \end{figure}
 
@@ -476,13 +473,13 @@ KNN алгоритмі сұрау көрінісі мен мәліметтер �
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image11}
+	\includegraphics[width=0.9\textwidth]{media/ict/image11}
 	\caption*{6 - сурет. Дыбыстық деректердің, сөйлеу белгілерінің үш өлшемді көрінісі}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict/image12}
+	\includegraphics[width=0.9\textwidth]{media/ict/image12}
 	\caption*{7 - сурет. Дыбыстық деректердің, сөйлеу белгілерінің екі өлшемді көрінісі}
 \end{figure}
 
@@ -569,11 +566,12 @@ Processing. -2020. -Vol. 14.- P. 154--159. DOI
 10. Zhan C, Li W, Ogunbona P. Face recognition from single sample based on
 human face perception // In: International Conference Image and Vision
 Computing New Zealand. - 2009. -P. 56-61.
-\href{https://doi.org/10.1109/IVCNZ.2009.5378397}{DOI10.1109/IVCNZ.2009.5378397}
+
+\href{https://doi.org/10.1109/IVCNZ.2009.5378397}{DOI 10.1109/IVCNZ.2009.5378397}
 
 11. R. Praba, G. Darshan, K. T. Roshanraj. and P. B. Surya Prakash.
-StudyOn Machine Learning Algorithms//International Journal of
-ScientificResearch in Computer Science, Engineering and Information
+StudyOn Machine Learning Algorithms\\//International Journal of
+ScientificResearch in Computer Science, Engineering and Information\\
 Technology.-2021.-Vol.7(4)- P.67-72, 2021.
 
 12. V. B. Vaghela, B. M. Jadav. Analysis of various sentiment
@@ -610,6 +608,7 @@ e-mail:
 
 Darkenbayev D.- PhD, Acting Associate Professor Al-Farabi Kazakh
 National University, Almaty, Kazakhstan e-mail:
+
 \href{mailto:dauren.kadyrovich@gmail.com}{\nolinkurl{dauren.kadyrovich@gmail.com}};
 
 Modovov N.- master, Kazakh National Women' s Pedagogical
@@ -618,5 +617,6 @@ University, Almaty, Kazakhstan, e-mail:
 
 Oryntaeva Zh.- master, Kazakh National Women' s
 Pedagogical University, Almaty, Kazakhstan, e-mail:
+
 \href{mailto:Zannaoryntaeva0@gmail.ru}{\nolinkurl{Zannaoryntaeva0@gmail.ru}}
 \end{authorinfo}
