@@ -1,34 +1,19 @@
-\id{МРНТИ 20.53.01}
+%% DONE
+\id{МРНТИ 20.53.01}{}
 
-{\bfseries АНАЛИЗ И КРАТКОСРОЧНОЕ ПРОГНОЗИРОВАНИЕ ЦЕН НА ФОНДОВОМ РЫНКЕ С
-ПОМОЩЬЮ ВАРИАЦИОННЫХ МОДЕЛЕЙ ВРЕМЕННЫХ РЯДОВ}
+\begin{articleheader}
+\sectionwithauthors{А. Есенбек, А. Касымова, А. Картбаев}{АНАЛИЗ И КРАТКОСРОЧНОЕ ПРОГНОЗИРОВАНИЕ ЦЕН НА ФОНДОВОМ РЫНКЕ С ПОМОЩЬЮ ВАРИАЦИОННЫХ МОДЕЛЕЙ ВРЕМЕННЫХ РЯДОВ}
 
-{\bfseries А.
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict2/image1}
-	\caption*{}
-\end{figure}
+{\bfseries А. Есенбек\authorid,
+А. Касымова\authorid,
+А. Картбаев\textsuperscript{\envelope } \authorid}
+\end{articleheader}
 
-А.
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict2/image2}
-	\caption*{}
-\end{figure}
+\begin{affiliation}
+\emph{Казахстанско-Британский технический университет, Алматы, Казахстан}
 
-А.
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict2/image1}
-	\caption*{}
-\end{figure}
-
-
-\emph{Казахстанско-Британский технический университет, Алматы,
-Казахстан}
-
-{\bfseries \textsuperscript{\envelope }}Корреспондент-автор: a.kartbaev@kbtu.kz
+\raggedright {\bfseries \textsuperscript{\envelope }}{\em Корреспондент-автор: a.kartbaev@kbtu.kz}
+\end{affiliation}
 
 Прогнозирование цен на финансовые активы остается жизненно важной
 областью финансовой аналитики, что стимулирует постоянные исследования
@@ -52,14 +37,20 @@
 {\bfseries Ключевые слова}: машинное обучение, предиктивное моделирование,
 прогнозирование цен, нейронные сети, VAR, K-means, Big Data\emph{.}
 
-{\bfseries УАҚЫТ-ВАРИАЦИЯЛЫ СЕРИЯЛЫҚ МҮЛГІЛЕРДІ ПАЙДАЛАНУ МЕН ҚОР
-НАРЫҒЫНДАҒЫ БАҒАНЫ ТАЛДАУ ЖӘНЕ ҚЫСҚА МЕРЗІМДІ БОЛЖАУ}
+\begin{articleheader}
+{\bfseries УАҚЫТ-ВАРИАЦИЯЛЫ СЕРИЯЛЫҚ МҮЛГІЛЕРДІ ПАЙДАЛАНУ МЕН ҚОР НАРЫҒЫНДАҒЫ БАҒАНЫ ТАЛДАУ ЖӘНЕ ҚЫСҚА МЕРЗІМДІ БОЛЖАУ}
 
-{\bfseries А. Есенбек, А. Касымова, А. Картбаев\textsuperscript{\envelope }}
+{\bfseries
+А. Есенбек,
+А. Касымова,
+А. Картбаев\textsuperscript{\envelope }}
+\end{articleheader}
 
+\begin{affiliation}
 \emph{Қазақ-Британ техникалық университеті, Алматы, Қазақстан,}
 
 \emph{e-mail: a.kartbaev@kbtu.kz}
+\end{affiliation}
 
 Қаржы активтерінің бағасын болжау қаржылық аналитиканың маңызды саласы
 болып қала береді, бұл болжаудың тиімді әдістеріне үздіксіз зерттеулер
@@ -84,14 +75,20 @@
 {\bfseries Түйін сөздер:} машиналық оқыту, болжамды модельдеу, бағаны
 болжау, нейрондық желілер, VAR, K-means, Big Data\emph{.}
 
-{\bfseries ANALYSIS AND SHORT-TERM PREDICTION OF STOCK MARKET PRICES USING
-VAR MODELS OF TIME SERIES}
+\begin{articleheader}
+{\bfseries ANALYSIS AND SHORT-TERM PREDICTION OF STOCK MARKET PRICES USING VAR MODELS OF TIME SERIES}
 
-{\bfseries A. Yessenbek, A. Kassymova, A. Kartbayev\textsuperscript{\envelope }}
+{\bfseries
+A. Yessenbek,
+A. Kassymova,
+A. Kartbayev\textsuperscript{\envelope }}
+\end{articleheader}
 
+\begin{affiliation}
 \emph{Kazakh-British Technical University, Almaty, Kazakhstan,}
 
 \emph{e-mail: a.kartbaev@kbtu.kz}
+\end{affiliation}
 
 Forecasting stock assets prices remains a vital area in financial
 analytics, driving ongoing research into more effective predictive
@@ -114,6 +111,7 @@ predictive insights for financial decision-making.
 {\bfseries Keywords}: machine learning, predictive modeling, stock
 forecasting, neural networks, VAR, K-means, Big Data\emph{.}
 
+\begin{multicols}{2}
 {\bfseries Введение.} В настоящее время прогнозирование цен на акции и
 выявление связей между компаниями - две популярные темы в аналитике
 больших данных. Известно, что цены на различные акции коррелируют между
@@ -225,16 +223,15 @@ Kaggle начиная с момента выхода на биржу, в зав�
 изменений. Также были добавлены к данным аддитивная обратная величина
 для каждой акции, чтобы выявить акции которые отрицательно связаны с
 другими акциями.
+\end{multicols}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict2/image3}
-	\caption*{}
+	\includegraphics[width=0.5\textwidth]{media/ict2/image3}
+	\caption*{Рис. 1 - Алгоритм 1. Кластеризация по методу K-средних}
 \end{figure}
 
-
-{\bfseries Рис. 1- Алгоритм 1. Кластеризация по методу K-средних}
-
+\begin{multicols}{2}
 \emph{Кластеризация по методу К-средних}. Было изучен метод
 кластеризации K-means clustering, где использовались К-средние для
 кластеризации компаний на основе изменений их биржевых цен. Поскольку
@@ -262,16 +259,15 @@ Kaggle начиная с момента выхода на биржу, в зав�
 внешнего узла, содержащего цель и ближайшие осколки, если в узле меньше
 точек, чем нам нужно, как показано на рисунке 2. Результат поиска по
 всем деревьям используется для получения рейтинга сходства.
+\end{multicols}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict2/image4}
-	\caption*{}
+	\includegraphics[width=\textwidth]{media/ict2/image4}
+	\caption*{Рис. 2 - Бинарное дерево ANNOY}
 \end{figure}
 
-
-{\bfseries Рис. 2 -Бинарное дерево ANNOY}
-
+\begin{multicols}{2}
 После очистки фактические цены были преобразованы в процентные
 изменения. В качестве признаков были взяты цены закрытия за последние
 1000 дней. Чтобы понять отрицательную корреляцию между акциями, также
@@ -295,15 +291,19 @@ Kaggle начиная с момента выхода на биржу, в зав�
 значения каждого временного ряда в предыдущие периоды. Например, простая
 VAR-модель двух временных рядов у 1 и у 2 может быть записана следующим
 образом:
+\end{multicols}
 
-\(\begin{matrix}
+\begin{equation}
+\begin{matrix}
 y_{1t} = \beta_{10} + \beta_{11}y_{1t - 1} + \alpha_{11}y_{2t - 1} + u_{1t} \\
 y_{2t} = \beta_{20} + \beta_{21}y_{2t - 1} + \alpha_{21}y_{1t - 1} + u_{2t}
-\end{matrix}\) (1)
+\end{matrix}
+\end{equation}
 
 далее можно записать в виде:
 
-\(\left( \begin{array}{r}
+\begin{equation}
+\left( \begin{array}{r}
 y_{1t} \\
 y_{2t}
 \end{array} \right) = \left( \begin{array}{r}
@@ -318,8 +318,10 @@ y_{2t - 1}
 \end{array} \right) + \left( \begin{array}{r}
 u_{1t} \\
 u_{2t}
-\end{array} \right)\) (2)
+\end{array} \right)
+\end{equation}
 
+\begin{multicols}{2}
 где \(y_{1t}\) и \(y_{2t}\) представляют собой значения у 1 и у 2 в
 момент времени \(t,y_{1t - 1}\) и \(y_{2t - 1}\) представляют значения у
 1 и у 2 в момент времени \(t - 1\) n \(\beta s\) и \(\alpha s\)
@@ -353,18 +355,24 @@ VAR-модели наиболее подходят для полного и то
 состоит из 10 уравнений. Независимыми переменными являются цены каждой
 из 10 акций на день раньше (день \(t - 1\) ). Эта VAR-модель может быть
 записана как:
+\end{multicols}
 
-\(\begin{matrix}
+\begin{equation}
+\begin{matrix}
 y_{1,t} = b_{1,0} + b_{1,1}y_{1,t - 1} + b_{1,2}y_{2,t - 1} + \cdots + b_{1,10}y_{10,t - 1} + e_{1,t} \\
 y_{2,t} = b_{2,0} + b_{2,1}y_{1,t - 1} + b_{2,2}y_{2,t - 1} + \cdots + b_{2,10}y_{10,t - 1} + e_{2,t} \\
 y_{10,t} = b_{10,0} + b_{10,1}y_{1,t - 1} + b_{10,2}y_{2,t - 1} + \cdots + b_{10,10}y_{10,t - 1} + e_{10,t}
-\end{matrix}\) (3)
+\end{matrix}
+\end{equation}
 
+\begin{multicols}{2}
 где \(y_{i,t}\) цена акции і в день t , а все b - коэффициенты,
 подлежащие оценке. Эквивалентно, в векторной форме, эта модель VAR имеет
 вид:
 
-\(Y_{t} = B_{0} + B_{1} \ast Y_{t - 1} + e_{t}\) (4)
+\begin{equation}
+Y_{t} = B_{0} + B_{1} \ast Y_{t - 1} + e_{t}
+\end{equation}
 
 где \(Y_{t}\) вектор 10 х 1 цен на акции в день t и \(B_{0}\) и
 \(B_{1}\) матрицы коэффициентов 10 x 1 и 10х10, подлежащих оценке.
@@ -403,41 +411,32 @@ VAR-модели для групп из более чем 100 акций. Осо
 рассчитаны средняя погрешность прогнозов, т. е. то, насколько прогнозы в
 среднем выше или ниже фактических цен, более полные данные приведены
 ниже в Таблице 1.
+\end{multicols}
 
-{\bfseries Таблица 1 -- Измерения точности работы модели}
+\begin{table}[H]
+\caption*{Таблица 1 - Измерения точности работы модели}
+\centering
+\begin{tblr}{
+  cells = {c},
+  hlines,
+  vlines,
+}
+История\_Дней & Прогноз\_Дней & Кол\_Акций & Сред.кв. ошибка \\
+900           & 5             & 10         & 0.009192        \\
+900           & 5             & 9          & 0.009298        \\
+900           & 10            & 7          & 0.009582        \\
+900           & 3             & 7          & 0.010905        \\
+700           & 10            & 10         & 0.086412        \\
+700           & 10            & 7          & 0.086470        \\
+700           & 3             & 7          & 0.011312        \\
+900           & 10            & 9          & 0.011659        \\
+900           & 10            & 5          & 0.088065        \\
+300           & 3             & 10         & 0.012224        \\
+300           & 10            & 9          & 0.087300        
+\end{tblr}
+\end{table}
 
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2452}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2264}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2501}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2782}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% История\_Дней
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Прогноз\_Дней
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Кол\_Акций
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% Сред.кв. ошибка
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% 900 & 5 & 10 & 0.009192 \\
-% 900 & 5 & 9 & 0.009298 \\
-% 900 & 10 & 7 & 0.009582 \\
-% 900 & 3 & 7 & 0.010905 \\
-% 700 & 10 & 10 & 0.086412 \\
-% 700 & 10 & 7 & 0.086470 \\
-% 700 & 3 & 7 & 0.011312 \\
-% 900 & 10 & 9 & 0.011659 \\
-% 900 & 10 & 5 & 0.088065 \\
-% 300 & 3 & 10 & 0.012224 \\
-% 300 & 10 & 9 & 0.087300 \\
-% \end{longtable}
-
+\begin{multicols}{2}
 Чтобы минимизировать среднюю абсолютную ошибку, был проведен сеточный
 поиск для оптимизации гиперпараметров модели, а именно продолжительности
 обучения, продолжительности прогнозирования и количества акций в группе.
@@ -485,17 +484,15 @@ VAR-модели для групп из более чем 100 акций. Осо
 предлагают "нейтральную" рекомендацию. Эти рекомендации также
 отображаются в таблице. Ниже приведен рисунок 3, где показано прогноз
 изменения цены акций на следующие пять дней.
+\end{multicols}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict2/image5}
-	\caption*{}
+	\includegraphics[width=0.85\textwidth]{media/ict2/image5}
+	\caption*{Рис. 3 - Прогноз изменения цены акций на следующие пять дней по модели}
 \end{figure}
 
-
-{\bfseries Рис. 3 - Прогноз изменения цены акций на следующие пять дней по
-модели}
-
+\begin{multicols}{2}
 Эти рекомендации рассчитаны помочь пользователям более эффективно
 принимать решения на основе полученных прогнозов. После того как
 пользователь введет название компании и выберет цель поиска (отклик),
@@ -546,62 +543,68 @@ VAR. Во-первых, входные данные, подаваемые в т�
 использовать другие более специализированные методы. Более того, была
 достигнута улучшение модели за счет уменьшения ошибок в процессе оценки
 изменений трендов.
+\end{multicols}
 
+\begin{center}
 {\bfseries Литература}
+\end{center}
 
-1.George E.P. Box, Gwilym M. Jenkins, Gregory C. Reinsel and Greta M.
+\begin{references}
+1. George E.P. Box, Gwilym M. Jenkins, Gregory C. Reinsel and Greta M.
 Ljung Time Series Analysis: Forecasting and Control,5th Edition.
 -Published by John Wiley and Sons Inc., Hoboken, New Jersey, 2015. --P.
 712. ISBN 978-1-118-67502-1
 
-2.David W Hosmer, S. L. Lemeshow Applied Logistic Regression. -John
+2. David W Hosmer, S. L. Lemeshow Applied Logistic Regression. -John
 Wiley \& Sons, New York, 2000. DOI 10.1002/0471722146
 
-3.Agus Suharsono; Auliya Aziza; Wara Pramesti Comparison of vector
+3. Agus Suharsono; Auliya Aziza; Wara Pramesti Comparison of vector
 autoregressive (VAR) and vector error correction models (VECM) for index
 of ASEAN stock price // AIP Conference Proceedings. - 2017. -Vol. 1913.
 DOI 10.1063/1.5016666
 
-4.J. MacQueen. Some methods for classification and analysis of
+4. J. MacQueen. Some methods for classification and analysis of
 multivariate observations // Berkeley Symp. on Math. Statist. and Prob.
 -1967. -Vol. 5.1. -P. 281--297. URL:
-http://projecteuclid.org/euclid.bsmsp/1200512992
+\href{http://projecteuclid.org/euclid.bsmsp/1200512992}{http://projecteuclid.org}
 
-5.Erik BernhardssonANNOY: Approximate Nearest Neighbors in C++/Python //
+5. Erik BernhardssonANNOY: Approximate Nearest Neighbors in C++/Python //
 Github pages. -2014. URL: https://github.com/spotify/annoy
 
-6.Bergstra J., Bengio Yo. Random search for hyper-parameter
+6. Bergstra J., Bengio Yo. Random search for hyper-parameter
 optimization// Journal of Machine Learning Research. -2012. -Vol. 13.
 -P. 281--305. DOI 10.5555/2188385.2188395
 
-7.Christopher A. Sims Macroeconomics and Reality// Econometrica. -1980.
+7. Christopher A. Sims Macroeconomics and Reality// Econometrica. -1980.
 -Vol. 48. -P. 1--48. DOI 10.2307/1912017
 
-8.Helmut Lütkepohl New Introduction to Multiple Time Series Analysis:
+8. Helmut Lütkepohl New Introduction to Multiple Time Series Analysis:
 textbook. - 2005. ISBN 978-3-540-40172-8
 
-9.Lutz Kilian,, Helmut Lütkepohl Structural Vector Autoregressive
+9. Lutz Kilian,, Helmut Lütkepohl Structural Vector Autoregressive
 Analysis. -Cambridge University Press, 2017. DOI 10.1017/9781108164818
 
-10.Ruey S. Tsay Analysis of Financial Time Series. -- Wiley, 2010. -720
+10. Ruey S. Tsay Analysis of Financial Time Series. -- Wiley, 2010. -720
 p. ISBN 9780470414354
 
-11.David R. Rapach, Matthew C. Ringgenberg, , Guofu Zhou Short interest
+11. David R. Rapach, Matthew C. Ringgenberg, , Guofu Zhou Short interest
 and aggregate stock returns // Journal of Financial Economics. -2016.
 -Vol. 121(1). -P. 46-65. DOI 10.1016/j.jfineco.2016.03.004
 
-12.Wen Long \& Jing Gao \& Kehan Bai \& Zhichen Lu A hybrid model for
+12. Wen Long \& Jing Gao \& Kehan Bai \& Zhichen Lu A hybrid model for
 stock price prediction based on multi-view heterogeneous data //
 Financial Innovation, Springer;Southwestern University of Finance and
 Economics. -2024. -Vol. 10(1). --P. 1-50. DOI 10.1186/s40854-023-00519-w
+\end{references}
 
+\begin{authorinfo}
 \emph{{\bfseries Cведения об авторах}}
 
 Есенбек А.- магистрант, Казахстанско-Британский технический университет,
-Алматы, Казахстан, e-mail:a\_yessenbek@kbtu.kz;
+Алматы, Казахстан, e-mail: \\a\_yessenbek@kbtu.kz;
 
 Касымова F.- магистрант, Казахстанско-Британский технический
-университет, Алматы, Казахстан, e-mail:a\_kassymova@kbtu.kz;
+университет, Алматы, Казахстан, e-mail: \\a\_kassymova@kbtu.kz;
 
 Картбаев А.-PhD, ассоциированный профессор, Казахстанско-Британский
 технический университет, Алматы, Казахстан, e-mail: a.kartbaev@kbtu.kz.
@@ -609,10 +612,11 @@ Economics. -2024. -Vol. 10(1). --P. 1-50. DOI 10.1186/s40854-023-00519-w
 \emph{{\bfseries Information about the authors}}
 
 Yessenbek A.- master student, Kazakh-British Technical University,
-Almaty, Kazakhstan, e -- mail:a\_yessenbek@kbtu.kz;
+Almaty, Kazakhstan, e-mail: a\_yessenbek@kbtu.kz;
 
 Kassymova F.- master student, Kazakh-British Technical University,
-Almaty, Kazakhstan, e-mail:a\_kassymova@kbtu.kz;
+Almaty, Kazakhstan, e-mail: a\_kassymova@kbtu.kz;
 
 Kartbayev A. -- PhD, associate professor, Kazakh-British Technical
-University, Almaty, Kazakhstan, e-mail:a.kartbaev@kbtu.kz.
+University, Almaty, Kazakhstan, e-mail: a.kartbaev@kbtu.kz.
+\end{authorinfo}
