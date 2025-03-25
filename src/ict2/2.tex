@@ -1,3 +1,4 @@
+%% DONE
 \id{МРНТИ 28.17.19}{}
 
 \begin{articleheader}
@@ -119,7 +120,7 @@ The created algorithm for optimizing evacuation routes is based on
 solving transport problems, is highly versatile and easily adapts to the
 practical requirements of prompt and safe exit of people from a
 building. The article presents the results of numerical modeling, and
-also considers the prospects for further development of such systems.
+also considers the prospects for further \\development of such systems.
 
 The developed algorithms can be applied not only in case of fire, but
 also in case of other emergency situations, such as floods or
@@ -129,6 +130,7 @@ disasters.
 {\bfseries Keywords:} intelligent system, fire safety, transport task, fire,
 emergency, evacuation
 
+\begin{multicols}{2}
 {\bfseries Введение.} Пожары представляют собой одни из наиболее
 разрушительных природных явлений, способных причинить значительный и
 зачастую необратимый вред экосистемам нашей планеты. В условиях быстрого
@@ -214,12 +216,7 @@ x_{ij}^{p} \geq 0,\quad i = \overline{1,n_{p}},\quad j = \overline{1,k_{p}},\qua
 Z = \sum_{p = 1}^{m}{\sum_{i = 1}^{n_{p}}{\sum_{j = 1}^{k_{p}}{c_{ij}^{p}x_{ij}^{p} \rightarrow \min}}}.
 \end{equation}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
-\item
-  \emph{Теоретическая часть}
-\end{enumerate}
+2. \emph{Теоретическая часть}
 
 Существует множество методов для решения транспортной задачи (1)-(4). В
 дальнейшем мы рассмотрим метод потенциалов.
@@ -272,44 +269,20 @@ Z_{m} = \sum_{i = 1}^{n_{m}}{\sum_{j = 1}^{k_{m}}{c_{ij}^{m}x_{ij}^{m} \rightarr
 
 минимизировать функционал
 
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9489}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0511}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% \[Z_{s} = \sum_{i = 1}^{n_{s}}{\sum_{j = 1}^{k_{s}}{c_{ij}^{s}x_{ij}^{s} \rightarrow \min}}\]
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% (9)
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% \end{longtable}
+\begin{equation}
+Z_{s} = \sum_{i = 1}^{n_{s}}{\sum_{j = 1}^{k_{s}}{c_{ij}^{s}x_{ij}^{s} \rightarrow \min}}
+\end{equation}
 
 при ограничениях
 
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9322}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0678}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% \[\sum_{j = 1}^{n_{i}}x_{ij}^{s} = a_{si},i = \overline{1,n_{s}},\]
-% 
-% \[\sum_{j = 1}^{n_{i}}x_{ij}^{s} = b_{s - 1,i},i = \overline{n_{s},n_{s} + k_{s - 1}},\]
-% 
-% \[\sum_{j = 1}^{n_{i}}x_{ij}^{s} = b_{mi},i = \overline{1,k_{s}},\]
-% 
-% \(x_{ij}^{s} \geq 0\) , \(i = \overline{1,n_{s} + k_{s - 1}}\) ,
-% \(j = \overline{1,k_{m}}\).
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% (10)
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% \end{longtable}
+\begin{equation}
+\begin{aligned}
+\sum_{j = 1}^{n_{i}}x_{ij}^{s} &= a_{si},i = \overline{1,n_{s}}, \\
+\sum_{j = 1}^{n_{i}}x_{ij}^{s} &= b_{s - 1,i},i = \overline{n_{s},n_{s} + k_{s - 1}}, \\
+\sum_{j = 1}^{n_{i}}x_{ij}^{s} &= b_{mi},i = \overline{1,k_{s}}, \\
+x_{ij}^{s} \geq 0,\quad i &= \overline{1,n_{s} + k_{s - 1}},\quad j = \overline{1,k_{m}}.
+\end{aligned}
+\end{equation}
 
 Возвращаемся к шагу S.
 
@@ -319,38 +292,16 @@ Z_{m} = \sum_{i = 1}^{n_{m}}{\sum_{j = 1}^{k_{m}}{c_{ij}^{m}x_{ij}^{m} \rightarr
 
 Введем обозначение
 
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9378}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0622}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% \[k_{0} = 0\]
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% (11)
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% \end{longtable}
+\begin{equation}
+k_{0} = 0
+\end{equation}
 
 {\bfseries Теорема.} Сложность предложенного метода для задачи (1)-(4)
 имеет следующую оценку
 
-% \begin{longtable}[]{@{}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.9336}}
-%   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.0664}}@{}}
-% \toprule\noalign{}
-% \begin{minipage}[b]{\linewidth}\raggedright
-% \[O(m \ast \max_{i = 1,p}k_{i} \ast {(\max_{i = 1,p}n_{i} + \max_{i = 1,p}k_{i})}^{2})\]
-% \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-% (12)
-% \end{minipage} \\
-% \midrule\noalign{}
-% \endhead
-% \bottomrule\noalign{}
-% \endlastfoot
-% \end{longtable}
+\begin{equation}
+O(m \ast \max_{i = 1,p}k_{i} \ast {(\max_{i = 1,p}n_{i} + \max_{i = 1,p}k_{i})}^{2})
+\end{equation}
 
 {\bfseries Доказательство.}
 
@@ -358,70 +309,51 @@ Z_{m} = \sum_{i = 1}^{n_{m}}{\sum_{j = 1}^{k_{m}}{c_{ij}^{m}x_{ij}^{m} \rightarr
 
 \[O(m \ast \max_{i = 1,p}{(n}_{i} + k_{i - 1}) \ast \max_{i = 1,p}k_{i} \ast (\max_{i = 1,p}n_{i} + \max_{i = 1,p}k_{i}))\]
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{2}
-\item
-  \emph{{\bfseries Программная реализация}}
-\end{enumerate}
+3. \emph{{\bfseries Программная реализация}}
 
 Исходные данные о здании извлекаются из текстового файла Fzdan.txt,
 первая строка которого содержит целое число, обозначающее:
 
-{\bfseries -} Ne - количество этажей.
+- Ne - количество этажей.
 
 В последующих строках представлена информация о количестве кабинетов и
 лестниц (выходов), ведущих вниз (или из здания):
 
-{\bfseries -} Nk - количество кабинетов,
+- Nk - количество кабинетов,
 
-{\bfseries -} Nl - количество лестниц (выходов).
+- Nl - количество лестниц (выходов).
 
 Данные о кабинетах здания берутся из текстового файла Fkabn.txt, где
 построчно указаны:
 
-\begin{itemize}
-\item
-  этаж, на котором расположен кабинет,
-\item
-  номер кабинета,
-\item
-  максимальное количество людей, которые могут находиться в кабинете.
-\end{itemize}
+- этаж, на котором расположен кабинет,
+
+- номер кабинета,
+
+- максимальное количество людей, которые могут находиться в кабинете.
 
 Информация о лестницах здания содержится в текстовом файле Flest.txt, в
 котором построчно указаны:
 
-\begin{itemize}
-\item
-  этаж, на котором он находится,
-\item
-  номер лестницы,
-\item
-  пропускная способность лестницы.
-\end{itemize}
+- этаж, на котором он находится,
+
+- номер лестницы,
+
+- пропускная способность лестницы.
 
 В текстовом файле Fsvja.txt описаны взаимосвязи между кабинетами,
 лестницами и выходами. Каждая строка включает следующие данные:
 
-\begin{itemize}
-\item
-  первый объект,
-\item
-  второй объект, с которым он связан,
-\item
-  тип связи (1 --- между кабинетом и лестницей, 2 - между лестницами),
-\item
-  расстояние между объектами в метрах или время, необходимое для
-  преодоления расстояния.
-\end{itemize}
+- первый объект,
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
-\item
-  \emph{{\bfseries Экспериментальная часть}}
-\end{enumerate}
+- второй объект, с которым он связан,
+
+- тип связи (1 - между кабинетом и лестницей, 2 - между лестницами),
+
+- расстояние между объектами в метрах или время, необходимое для
+преодоления расстояния.
+
+4. \emph{{\bfseries Экспериментальная часть}}
 
 Для иллюстрации возможностей разработанного алгоритма были выполнены
 расчеты в рамках следующей модельной задачи.
@@ -443,16 +375,15 @@ Z_{m} = \sum_{i = 1}^{n_{m}}{\sum_{j = 1}^{k_{m}}{c_{ij}^{m}x_{ij}^{m} \rightarr
 На основе предоставленных данных создается граф, где вершины
 K\textsubscript{i} обозначают кабинеты, а вершины L\textsubscript{i} --
 лестницы и выходы.
+\end{multicols}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{media/ict2/image7}
-	\caption*{}
+	\includegraphics[width=0.6\textwidth]{media/ict2/image7}
+	\caption*{Рис.1 - Экран с визуализацией полученного графа}
 \end{figure}
 
-
-{\bfseries Рис.1 - Экран с визуализацией полученного графа}
-
+\begin{multicols}{2}
 На рисунке 1 кабинеты обозначены зеленым кругом, лестницы и выходы --
 красным.
 
@@ -517,26 +448,30 @@ K\textsubscript{i} обозначают кабинеты, а вершины L\te
 математики и механики при КазНУ имени аль-Фараби и грантового
 финансирования научных исследований на 2023--2025 годы по проекту
 AP19678157.}
+\end{multicols}
 
+\begin{center}
 {\bfseries Литература}
+\end{center}
 
-1.Пирогов Н.С. Анализ причин пожаров в зданиях культурно-досугового
+\begin{references}
+1. Пирогов Н.С. Анализ причин пожаров в зданиях культурно-досугового
 значения. // Пожарный надзор. -- 2023.- №1. - С.67-73.
 
-2.Смирнов В.П. Прогнозирование путей эвакуации при пожаре в общественных
-зданиях // Авт.доктор.дисс. спец. 05.26.03, 2018. - 50 с.
+2. Смирнов В.П. Прогнозирование путей эвакуации при пожаре в общественных
+зданиях // \\Авт.доктор.дисс. спец. 05.26.03, 2018. - 50 с.
 
-3.Иванов П.Н. Исследование времени блокирования путей эвакуации
+3. Иванов П.Н. Исследование времени блокирования путей эвакуации
 токсичными продуктами горения на промышленных объектах //Авт.канд.дисс.
 спец. 05.26.03, 2019.30 с.
 
-4.Кормен, Томас X. и др. А45 Алгоритмы: Построение и анализ, 3-е изд.:
+4. Кормен, Томас X. и др. А45 Алгоритмы: Построение и анализ, 3-е изд.:
 Пер. с англ. -М.: ООО ``И. Д. Вильямс'', 2013.-1328 с. ISBN
 978-5-8459-1794-2
 
-5.\href{https://www.researchgate.net/profile/Derek-Clements-Croome}{Derek
+5. \href{https://www.researchgate.net/profile/Derek-Clements-Croome}{Derek
 John Clements-Croome} Intelligent Buildings: Design Management and
-Operation- ICE Publishing,2004.-408 p. ISBN 0 7277 3266 8
+Operation- ICE Publishing, 2004.-408 p. ISBN 0 7277 3266 8
 
 6. Бургегулов А.Д., Мазаков Т.Ж., Зиятбекова Г.З., Саметова А.А.,
 Джолдасова Б.У. Применение интеллектуальных систем пожарной безопасности
@@ -569,41 +504,45 @@ Systems.- 2024.-Vol.4.- P.99-109, ISSN 2667-3452.
 \href{https://doi.org/10.1016/j.iotcps.2023.09.002}{DOI
 10.1016/j.iotcps.2023.09.002}
 
-12.Мазаков Т.Ж., Бургегулов А.Д., Джомартова Ш.А., Мазакова А.Т.,
+12. Мазаков Т.Ж., Бургегулов А.Д., Джомартова Ш.А., Мазакова А.Т.,
 Саметова А.А., Досаналиева А.Т. Построение маршрутов для эвакуации
 сотрудников из здания при возникновении чрезвычайной ситуации // Вестник
 КазУТБ.- 2024.- № 1(22).- С.68-74
 
 DOI 10.58805/kazutb.v.1.22-292
 
-13.Бургегулов А., Зиятбекова Г., Мазаков Т., Саметова А., Алиаскар М.
+13. Бургегулов А., Зиятбекова Г., Мазаков Т., Саметова А., Алиаскар М.
 Использование технологий Интернета вещей для предотвращения пожаров //
 Международная конференция по электротехнике и информационным технологиям
 (ICEF 2023), Алматы, 2023. С.349-355
+\end{references}
 
+\begin{center}
 {\bfseries References}
+\end{center}
 
-1.Pirogov N.S. Analiz prichin pozharov v zdanijah
+\begin{references}
+1. Pirogov N.S. Analiz prichin pozharov v zdanijah
 kul' turno-dosugovogo znachenija. // Pozharnyj nadzor.
 -2023.- №1. - S.67-73.{[}in Russian{]}
 
-2.Smirnov V.P. Prognozirovanie putej jevakuacii pri pozhare v
+2. Smirnov V.P. Prognozirovanie putej jevakuacii pri pozhare v
 obshhestvennyh zdanijah // Avt.doktor.diss. spec. 05.26.03, 2018. - 50
 s. {[}in Russian{]}
 
-3.Ivanov P.N. Issledovanie vremeni blokirovanija putej jevakuacii
+3. Ivanov P.N. Issledovanie vremeni blokirovanija putej jevakuacii
 toksichnymi produktami gorenija na promyshlennyh ob\#ektah
 //Avt.kand.diss. spec. 05.26.03, 2019.30 s. {[}in Russian{]}
 
-4.Kormen, Tomas X. i dr. A45 Algoritmy: Postroenie i analiz, 3-e izd.:
+4. Kormen, Tomas X. i dr. A45 Algoritmy: Postroenie i analiz, 3-e izd.:
 Per. s angl. -M.: OOO ``I. D. Vil' jams'', 2013.-1328 s.
 ISBN 978-5-8459-1794-2{[}in Russian{]}
 
-5.\href{https://www.researchgate.net/profile/Derek-Clements-Croome}{Derek
+5. \href{https://www.researchgate.net/profile/Derek-Clements-Croome}{Derek
 John Clements-Croome} Intelligent Buildings: Design Management and
-Operation- ICE Publishing,2004.-408 p. ISBN 0 7277 3266 8
+Operation- ICE Publishing, 2004.-408 p. ISBN 0 7277 3266 8
 
-6.Burgegulov A.D., Mazakov T.Zh., Zijatbekova G.Z., Sametova A.A.,
+6. Burgegulov A.D., Mazakov T.Zh., Zijatbekova G.Z., Sametova A.A.,
 Dzholdasova B.U. Primenenie intellektual' nyh sistem
 pozharnoj bezopasnosti v umnyh gorodah // Vestnik KazUTB.- 2023. - №
 2(19). - S. 7-20. DOI 10.58805/kazutb.v.2.19-84. {[}in Russian{]}
@@ -612,7 +551,7 @@ pozharnoj bezopasnosti v umnyh gorodah // Vestnik KazUTB.- 2023. - №
 Chislennye algoritmy: uchebnoe posobie / V. G. Zhadan. - M. : MFTI,
 2015. - 320 s. ISBN 978-5-7417 (Ch. II). {[}in Russian{]}
 
-8.Rafgarden T.: Sovershennyj algoritm. Grafovye algoritmy i struktury
+8. Rafgarden T.: Sovershennyj algoritm. Grafovye algoritmy i struktury
 dannyh. -- Piter: Piter-Trejd, 2020. - 340 s. ISBN 978-5-4461-1272-2.
 {[}in Russian{]}
 
@@ -634,26 +573,28 @@ Systems.- 2024.-Vol.4.- P.99-109, ISSN 2667-3452.
 \href{https://doi.org/10.1016/j.iotcps.2023.09.002}{DOI
 10.1016/j.iotcps.2023.09.002}
 
-12.Mazakov T.Zh., Burgegulov A.D., Dzhomartova Sh.A., Mazakova A.T.,
+12. Mazakov T.Zh., Burgegulov A.D., Dzhomartova Sh.A., Mazakova A.T.,
 Sametova A.A., Dosanalieva A.T. Postroenie marshrutov dlja jevakuacii
 sotrudnikov iz zdanija pri vozniknovenii chrezvychajnoj situacii //
 Vestnik KazUTB.- 2024.- № 1(22).- S.68-74
 
 DOI 10.58805/kazutb.v.1.22-292. {[}in Russian{]}
 
-13.Burgegulov A., Zijatbekova G., Mazakov T., Sametova A., Aliaskar M.
+13. Burgegulov A., Zijatbekova G., Mazakov T., Sametova A., Aliaskar M.
 Ispol' zovanie tehnologij Interneta veshhej dlja
 predotvrashhenija pozharov // Mezhdunarodnaja konferencija po
 jelektrotehnike i informacionnym tehnologijam (ICEF 2023), Almaty, 2023.
 S.349-355. {[}in Russian{]}
+\end{references}
 
+\begin{authorinfo}
 \emph{{\bfseries Сведения об авторах}}
 
 Бургегулов А.Д.- докторант КазНУ им.аль-Фараби, Алматы, Казахстан,
 e-mail: \href{mailto:dizel_kz@bk.ru}{\nolinkurl{dizel\_kz@bk.ru}};
 
 Джомартова Ш.А. - доктор технических наук, доцент, КазНУ им. аль-Фараби,
-Алматы, Казахстан, e-mail:
+Алматы, Казахстан, e-mail:\\
 \href{mailto:jomartova@mail.ru}{\nolinkurl{jomartova@mail.ru}};
 
 Мазақова Ә.Т.- докторант КазНУ им.аль-Фараби, Алматы, Казахстан, e-mail:
@@ -677,7 +618,7 @@ University, Almaty, Kazakhstan, e-mail:
 \href{mailto:dizel_kz@bk.ru}{\nolinkurl{dizel\_kz@bk.ru}};
 
 Jomartova Sh.A. - Doctor of Technical Sciences, Associate Professor,
-Al-Farabi KazNU, Almaty, Kazakhstan, e-mail:
+Al-Farabi KazNU, Almaty, Kazakhstan, e-mail:\\
 \href{mailto:jomartova@mail.ru}{\nolinkurl{jomartova@mail.ru}};
 
 Mazakova A.T.- Doctoral student of Al-Farabi Kazakh National University,
@@ -692,6 +633,7 @@ Al-Farabi KazNU, Almaty, Kazakhstan, e-mail:
 \href{mailto:tmazakov@mail.ru}{\nolinkurl{tmazakov@mail.ru}};
 
 Mailybayeva A.D. - PhD, Associate Professor, Department of Computer
-Science, Atyrau University named after Kh. Dosmukhambetov, Atyrau,
+Science, Atyrau University named after Kh. \\Dosmukhambetov, Atyrau,
 Kazakhstan, e-mail:
 \href{mailto:a.maylibayeva@asu.edu.kz}{\nolinkurl{a.maylibayeva@asu.edu.kz}}
+\end{authorinfo}

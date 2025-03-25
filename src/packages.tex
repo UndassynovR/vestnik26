@@ -60,6 +60,10 @@
 \usepackage{makecell}                 % Additional table commands
 \usepackage{chngcntr}                 % Customizing table and figure numbering
 \usepackage{tabularray}
+\DefTblrTemplate{middlehead,lasthead}{default}{}
+\DefTblrTemplate{firstfoot,middlefoot}{default}{}
+\DefTblrTemplate{capcont}{default}{}    % Removes a caption on subsequent pages
+\DefTblrTemplate{contfoot}{default}{}   % Removes text denoting continuation on next page
 
 % Packages for Graphics and Figures
 \usepackage{graphicx}                 % Including graphics in the document
@@ -243,3 +247,4 @@
 }
 
 \renewcommand{\nolinkurl}[1]{#1}
+
