@@ -617,6 +617,25 @@ raw materials."
 	\caption*{Fig. 12 - Menu interface of the program "Automated system for selecting the composition of a building mix with additives from man-made raw materials"}
 \end{figure}
 
+\begin{table}[H]
+\caption*{Table 1 - The results of calculating the selection of the building mix}
+\centering
+\begin{tblr}{ 
+  colspec = {X[1] X[1] X[1] X[1] X[1] X[1]},
+  cells = {c},
+  hlines,
+  vlines,
+}
+Material    & Percentage (\%) & Density (kg/m³) & Cost per kg (KZT) & Mass (kg) & Total Cost (KZT) \\
+Cement      & 13              & 1400            & 200               & 182       & 36400            \\
+Sand        & 15              & 1600            & 30                & 240       & 7200             \\
+Gravel      & 50              & 1500            & 50                & 750       & 37500            \\
+Slag        & 10              & 1200            & 80                & 120       & 9600             \\
+Fly Ash     & 7               & 800             & 70                & 56        & 3920             \\
+Bauxite Mud & 5               & 1000            & 100               & 50        & 5000             
+\end{tblr}
+\end{table}
+
 \begin{multicols}{2}
 User interaction with the program
 
@@ -685,15 +704,28 @@ The results of calculating the selection of the building mix are
 presented in Table 1.
 \end{multicols}
 
-{\bfseries Table 1 - The results of calculating the selection of the building mix}
-
-
 If necessary, the user can add a new ingredient by clicking the "Add
 Material" button. Table 2 shows the calculation results for the
 percentage composition with other numerical values.
 
-{\bfseries Table 2 - Results of calculating the selection of the construction mixture}
-
+\begin{table}[H]
+\caption*{Table 2 - Results of calculating the selection of the construction mixture}
+\centering
+\begin{tblr}{
+  colspec = {X[1] X[1] X[1] X[1] X[1] X[1]},
+  cells = {c},
+  hlines,
+  vlines,
+}
+Material    & Percentage (\%) & Density (kg/m³) & Cost per kg (KZT) & Mass (kg) & Total Cost (KZT) \\
+Cement      & 14              & 1400            & 200               & 196       & 39200            \\
+Sand        & 16              & 1600            & 30                & 256       & 7680             \\
+Gravel      & 40              & 1500            & 50                & 600       & 30000            \\
+Slag        & 15              & 1200            & 80                & 180       & 14400            \\
+Fly Ash     & 10              & 800             & 70                & 80        & 5600             \\
+Bauxite Mud & 5               & 1000            & 100               & 50        & 5000             
+\end{tblr}
+\end{table}
 
 The program code has the ability to analyze data for different building
 mix compositions. In particular, Fig. 13 shows a graph of the effect of
